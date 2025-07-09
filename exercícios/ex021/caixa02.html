@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+            text-align: justify;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 10px solid blue;
+            border-radius: 20px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 8px solid green;
+            border-radius: 10px;
+            box-shadow: 1px 3px 2px 1px rgba(0, 0, 0, 0.356);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            padding: 4px;
+            margin: 0px;
+            border-radius: 10px;
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: rgb(157, 156, 156);
+            text-align: center;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.447);
+        }
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 5px;
+            margin: 0px;
+            box-shadow: -3px 4px 3px 0px rgba(0, 0, 0, 0.345);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a::after {
+            content: 'click';
+            color: rgba(179, 177, 177, 0.627);
+            font-size: 0.7em;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(27, 27, 248);
+            border: 2px solid white;
+        }
+        #primeiro > aside {
+            background-color: yellow;
+            box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.466);
+        }
+        #primeiro {
+            background-color: lightslategray;
+        }
+        span {
+            color: green;
+            font-style: italic;
+            font-weight: bold;
+        }
+        #segundo {
+            background-color: rgb(159, 180, 199);
+        }
+        h1 {
+            text-align: center;
+        }
+        footer > p {
+            margin: 0px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.427);
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 15px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article id="primeiro">
+                <h2>Aumento do IOF no Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, modi deleniti? Illo exercitationem cumque, sed odit necessitatibus consequuntur ducimus cupiditate ullam ratione eos incidunt magnam dignissimos ipsam doloribus quas nisi.</p>
+                <aside>
+                    <p>Informado por G1 notícias</p>
+                </aside>
+            </article>
+            <article id="segundo">
+                <h2>Antecipação das eleições</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Impedit a dicta totam corporis alias porro illo voluptatibus cum laudantium, beatae modi?</span> Soluta enim rerum pariatur assumenda fugiat quod dolores commodi.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem alias sequi autem in voluptas distinctio dolorum nisi necessitatibus deleniti deserunt, voluptates fuga a suscipit laborum veniam esse debitis tempore nostrum.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pedro Henrique</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

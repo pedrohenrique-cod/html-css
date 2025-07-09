@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'rockstar';
+    src: url(fonts/Rockstar-ExtraBold.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+
+:root {
+    --cor-h2: #fa0;
+    --cor-destaque: #ffb102;
+    --cor-main: black;
+    --cor-de-fundo: #16161D;
+    --cor-h1: #FF8801;
+    --cor-de-contraste: #FFBA4F;
+
+    --fonte-destaque: 'rockstar', 'sans-serif', monospace;
+    --fonte-principal: "Nunito", sans-serif; 
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: white;
+}
+
+header {
+  min-width: 300px;
+  background-image: linear-gradient(to bottom, #ff8801, #fa0);
+  padding: 10px;
+}
+
+header h1 {
+  text-align: center;
+  font-family: var(--fonte-destaque);
+  color: black;
+  font-size: 3.3em;
+  text-shadow: 1px 1px 2px black;
+}
+
+header p {
+  font-family: var(--fonte-principal);
+  text-align: center;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 14px;
+  padding-bottom: 9px;
+  text-shadow: 1px 1px 1px black;
+}
+
+nav {
+  background-color: #fa0;
+  padding: 3px 10px 12px 13px;
+  font-family: var(--fonte-principal);
+  font-weight: bold;
+  color: black;
+}
+
+nav a {
+  padding: 3px 16px 3px 4px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.521);
+  transition-duration: 0.1s;
+}
+
+nav img {
+  padding-right: 2px;
+  position: relative;
+  top: 3px;
+}
+
+main {
+  background-color: var(--cor-main);
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+  box-shadow: 1px 1px 4px 0px rgba(255, 255, 255, 0.216);
+}
+
+main > p {
+  font-size: 1.2em;
+}
+
+main > aside > p {
+  font-size: 1.2em;
+}
+
+main > h1 {
+  color: var(--cor-h1);
+  font-family: var(--fonte-destaque);
+  font-size: 2.8em;
+  padding-left: 11px;
+  padding-top: 13px;
+}
+
+main > h1#catalogo {
+  padding-top: 18px;
+}
+
+main > aside > h1 {
+  color: var(--cor-h1);
+  font-family: var(--fonte-destaque);
+  font-size: 2.8em;
+  padding-left: 11px;
+  padding-top: 15px;
+}
+
+main > h2 {
+  color: var(--cor-h2);
+  font-family: var(--fonte-destaque);
+  font-size: 2.2em;
+  padding-left: 11px;
+  padding-top: 15px;
+  text-align: left;
+}
+
+main > img#irmaos {
+  width: 100%;
+  max-width: 760px;
+  min-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+main > img.logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 350px;
+  min-width: 300px;
+}
+
+p {
+  font-family: var(--fonte-principal);
+  padding: 10px;
+  line-height: 1.6em;
+  text-align: justify;
+  text-indent: 20px;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0px 10px 5px 12px;
+  columns: 2;
+  font-family: var(--fonte-destaque);
+  font-weight: normal;
+  line-height: 1.5em;
+  list-style-type: square;
+}
+
+.ul {
+  font-size: 1.4em;
+  color: var(--cor-h2);
+  list-style-type: "-\00A0";
+}
+
+ol {
+  font-family: var(--fonte-principal);
+  font-style: italic;
+  padding: 3px 0px 3px 0px;
+  list-style-type: none;
+}
+
+aside {
+  padding-bottom: 12px;
+}
+
+section {
+  border: 3px solid orange;
+  margin: 12px 12px 0px 12px;
+  border-radius: 10px;
+  
+}
+
+section p, h1, h2 {
+  font-family: "Libertinus Mono", monospace;
+}
+
+section h1, h2 {
+  padding-left: 10px;
+  padding-top: 4px;
+  text-align: center;
+}
+
+section  h1 {
+  color: var(--cor-h1);
+  font-size: 1.7em;
+}
+
+section h2 {
+  color: var(--cor-h2);
+  font-size: 1.4em;
+}
+
+strong {
+  color: var(--cor-destaque);
+}
+
+strong:hover {
+  color: orange;
+  transition-duration: 0.3s;
+}
+
+abbr {
+  font-weight: bold;
+  text-decoration: none;
+  color: orange;
+}
+
+abbr:hover {
+  color: var(--cor-h1);
+  text-decoration: underline;
+  transition-duration: 0.2s;
+  font-style: italic;
+}
+
+main a {
+  color: #FF7420;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 2px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: #FFA800;
+  border-radius: 5px;
+}
+
+main a:hover {
+  color: #F2B949;
+  transition-duration: 0.4s;
+}
+
+main a::after {
+  content: '\1F517';
+}
+
+footer {
+  background-color: orange;
+}
+
+footer p {
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--fonte-principal);
+  font-size: 1.1em;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
