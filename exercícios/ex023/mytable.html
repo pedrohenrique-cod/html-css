@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Tabela</title>
+    <style>
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            background-color: rgb(160, 159, 159);
+            padding: 12px;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+
+        thead {
+            background-color: black;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
+        td {
+            padding: 5px;
+            text-align: center
+        }
+
+        th {
+            color: white;
+            padding: 6px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus jogos preferidos</h1>
+    <table>
+        <caption>Meus jogos prediletos de cada plataforma</caption>
+        <thead>
+            <th scope="col">Playstation</th>
+            <th scope="col">Xbox</th>
+            <th scope="col">Nintendo</th>
+            <th scope="col">Mobile</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>black myth: wukong</td>
+                <td>forza Horizon</td>
+                <td>zelda</td>
+                <td>super mombo quest</td>
+            </tr>
+            <tr>
+                <td>god of war</td>
+                <td>halo infinite</td>
+                <td>mario</td>
+                <td>hay day</td>
+            </tr>
+            <tr>
+                <td>the last of us</td>
+                <td>diablo</td>
+                <td>super smash bros</td>
+                <td>asphalt 9</td>
+            </tr>
+            <tr>
+                <td>days gone</td>
+                <td>gears of war</td>
+                <td>pokémon</td>
+                <td>brawl stars</td>
+            </tr>
+            <tr>
+                <td>uncharted</td>
+                <td>starfield</td>
+                <td>splatoon</td>
+                <td>clash of clans</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
