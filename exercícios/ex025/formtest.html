@@ -31,30 +31,30 @@
     <h1>ABIDAS</h1>
     <main>
         <form action="entrada.php" autocomplete="on" method="post">
-            <p>
-                <label for="inome">Nome: </label>
-                <input type="text" name="nome" id="inome" required placeholder="Nome Completo" minlength="10" maxlength="33" autocomplete="name">
-            </p>
-
-            <p>
-                <label for="inas">Data de Nascimento: </label>
-                <input type="date" name="nas" id="inas" required autocomplete="bday">
-            </p>
-
-            <p>
-                <label for="imail">Email: </label>
-                <input type="email" name="mail" id="imail" required autocomplete="email">
-            </p>
-
-            <p>
-                <label for="icpf">CPF: </label>
-                <input type="text" name="cpf" id="icpf" required maxlength="11" minlength="11">
-            </p>
-
-            <p>
-                <input type="submit" value="Cadastrar">
-                <input type="reset" value="Limpar">
-            </p>
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome: </label>
+                    <input type="text" name="nome" id="inome" required placeholder="Nome Completo" minlength="10" maxlength="33" autocomplete="name">
+                </p>
+                <p>
+                    <label for="inas">Data de Nascimento: </label>
+                    <input type="date" name="nas" id="inas" required autocomplete="bday">
+                </p>
+                <p>
+                    <label for="imail">Email: </label>
+                    <input type="email" name="mail" id="imail" required autocomplete="email">
+                </p>
+                <p>
+                    <label for="icpf">CPF: </label>
+                    <input type="number" name="cpf" id="icpf" required>
+                </p>
+            </fieldset>
+                <p>
+                    <input type="submit" value="Cadastrar">
+                    <input type="reset" value="Limpar">
+                </p>
+            
         </form>
     </main>
 </body>
